@@ -11,8 +11,8 @@ eventEmitter.emit('tutorial', 1, 3);
 
 class Person extends EvendEmitter {
     constructor(name) {
-        super();
-        this._name = name;
+        super(); 
+        this._name = name; 
     }
 
     get name() {
