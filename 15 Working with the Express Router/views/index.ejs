@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express server</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+    <h3>Express server</h3>
+    <p>EJS templete</p>
+
+    <h2>You Search for : <%= data.userQuery %>
+    </h2>
+    <p>
+        <%= data.queryData %>
+    </p>
+
+    <ul>
+        <% data.searhResults.forEach(result=> { %>
+            <li>
+                <%= result %>
+            </li>
+            <% }) %>
+    </ul>
+
+
+    <script src="/public/js/main.js"></script>
+</body>
+
+</html>
